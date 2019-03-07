@@ -51,6 +51,8 @@ int main(){
 		cout << endl;
 	}
 
+	delete restaurante;
+
 
 
 	return 0;
