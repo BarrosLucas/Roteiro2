@@ -35,7 +35,7 @@ int main(){
 
 
 	//SHOW TOTAL
-	printf("\nTotal do restaurante: R$ %.2f",restaurante->calculaTotalRestaurante());
+	printf("Total do restaurante: R$ %.2f\n\n",restaurante->calculaTotalRestaurante());
 
 	//SHOW FOR TABLE
 	for(int i = 0; i < restaurante->getMesas().size();i++){
@@ -46,6 +46,7 @@ int main(){
 			cout << "Descricao: "<< restaurante->getMesas().at(i).getPedidos().at(j).getDescricao() <<endl;
 			cout << "Quantidade: "<< restaurante->getMesas().at(i).getPedidos().at(j).getQuantidade() <<endl;
 			cout << "Preço: "<< restaurante->getMesas().at(i).getPedidos().at(j).getPreco() <<endl;
+			printf("Total: R$ %.2f\n\n",(restaurante->getMesas().at(i).getPedidos().at(j).getQuantidade())*(restaurante->getMesas().at(i).getPedidos().at(j).getPreco()));
 		}
 		cout << endl;
 	}
