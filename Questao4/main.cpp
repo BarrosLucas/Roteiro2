@@ -31,5 +31,11 @@ int main(){
 	Triangulo *triangulo = new Triangulo();
 	triangulo->calcularArea();
 
+	delete circulo;
+	delete quadrado;
+	delete trapezio;
+	delete retangulo;
+	delete triangulo;
+
 	return 0;
 }
