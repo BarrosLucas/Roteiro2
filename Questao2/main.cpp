@@ -56,6 +56,11 @@ int main(){
 	cout << "\nPessoa 2: "<<endl;
 	cout << pessoa2->toString() << endl;
 
+	delete pessoa1;
+	delete pessoa2;
+	delete endereco;
+	delete endereco2;
+
 	return 0;
 }
 /*
